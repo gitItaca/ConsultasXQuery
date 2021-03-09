@@ -1,0 +1,6 @@
+for $zon in distinct-values(//produc/cod_zona)
+for $num in (count(//produc[cod_zona = $zon]))
+return 
+<zona>{$zon}
+	<num>{$num}</num>
+</zona>

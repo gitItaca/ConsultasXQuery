@@ -1,0 +1,6 @@
+for $suc in /sucursales/sucursal
+let $maxSaldo := max($suc/cuenta/saldodebe)
+return 
+<sucursal>{data($suc/@codigo)}
+	<cuentasSaldoDebe>{$suc/cuenta[saldodebe=$maxSaldo]}</cuentasSaldoDebe>
+</sucursal>

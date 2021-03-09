@@ -1,0 +1,11 @@
+let $placa := //produc[denominacion[contains(., "Placa")]]/denominacion
+let $memoria := //produc[denominacion[contains(., "Memoria")]]/denominacion
+let $micro := //produc[denominacion[contains(., "Micro")]]/denominacion
+let $otros := //produc[denominacion[not(contains(., "Micro")) and not(contains(., "Placa")) and not(contains(., "Memoria"))]]/denominacion
+return
+<result>
+	<placa>{data($placa)}</placa>,
+	<memoria>{data($memoria)}</memoria>,
+	<micro>{data($micro)}</micro>,
+	<otros>{data($otros)}</otros>
+</result>

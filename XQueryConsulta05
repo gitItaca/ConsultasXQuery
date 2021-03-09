@@ -1,0 +1,9 @@
+for $suc in /sucursales/sucursal/@codigo
+let $tipos := //sucursal[@codigo = $suc]/cuenta[@tipo="AHORRO"] | //sucursal[@codigo = $suc]/cuenta[@tipo="PENSIONES"]
+
+
+return 
+<sucursal>
+	<codigo>{data($suc)}<numCuentas>{count($tipos)}</numCuentas></codigo>
+	
+</sucursal>

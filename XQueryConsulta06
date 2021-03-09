@@ -1,0 +1,9 @@
+for $suc in /sucursales/sucursal
+
+return 
+<sucursal>{data($suc/@codigo)}
+	<director>{data($suc/director)}</director>
+	<poblacion>{data($suc/poblacion)}</poblacion>
+	<saldoDebe>{sum($suc/cuenta/saldodebe)}</saldoDebe>
+	<saldoHaber>{sum($suc/cuenta/saldohaber)}</saldoHaber>
+</sucursal>

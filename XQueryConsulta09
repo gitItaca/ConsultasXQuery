@@ -1,0 +1,5 @@
+let $max := max(//sucursal/cuenta[@tipo="PENSIONES"]/aportacion)
+for $tipos in //sucursal/cuenta[@tipo="PENSIONES"]
+where $tipos/aportacion = $max
+
+return $tipos

@@ -1,0 +1,7 @@
+for $suc in /sucursales/sucursal[count(cuenta)>3]
+
+return 
+<sucursal>{data($suc/@codigo)}	
+	<director>{data($suc/director)}</director>
+	<poblacion>{data($suc/poblacion)}</poblacion>
+</sucursal>

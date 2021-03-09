@@ -1,0 +1,7 @@
+for $zone in distinct-values (doc("productos.xml")/productos/produc/cod_zona)
+let $precioZon := //produc[cod_zona = $zone]//precio
+let $max := max($precioZon)
+let $denomPrecioMax := //produc[precio = $max]//denominacion
+order by $zone
+
+return <zona id="{$zone}">"{$denomPrecioMax}"</zona>

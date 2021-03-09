@@ -1,0 +1,18 @@
+<sucursal>SUC1<cuentasSaldoDebe><cuenta tipo="AHORRO">
+			  <nombre>Antonio García</nombre>
+				<numero>123456</numero>
+				<saldohaber>21000</saldohaber>
+				<saldodebe>200</saldodebe>
+			</cuenta></cuentasSaldoDebe></sucursal>
+<sucursal>SUC2<cuentasSaldoDebe><cuenta tipo="AHORRO">
+			  <nombre>Marcelo Saez</nombre>
+				<numero>30303036</numero>
+				<saldohaber>15000</saldohaber>
+				<saldodebe>12000</saldodebe>
+			</cuenta></cuentasSaldoDebe></sucursal>
+<sucursal>SUC3<cuentasSaldoDebe><cuenta tipo="AHORRO">
+		    <nombre>Pedro Guerra</nombre>
+				<numero>1606778</numero>
+				<saldohaber>31000</saldohaber>
+				<saldodebe>1000</saldodebe>
+			</cuenta></cuentasSaldoDebe></sucursal>

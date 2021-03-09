@@ -1,0 +1,4 @@
+for $den in doc("productos.xml")/productos/produc/denominacion
+for $zon in doc("productos.xml")/productos/produc/cod_zona
+order by $zon
+return <zona id="{$zon}">"{$den}"</zona>	
